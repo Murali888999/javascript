@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h2>scope of java script</h2>
+    <p id="name"></p> 
+    <p id="name1"></p>   
+    <script>
+        myfunc();
+        document.getElementById("name").innerHTML = "model of car is "+ typeof car ;
+       function myfunc() {
+           var car= "benz";
+       };
+        var car = "scorpio";
+        myfunc1();
+       function myfunc1()
+       {
+           document.getElementById("name1").innerHTML = "model of car is " + typeof car;
+       }
+    </script>
+</body>
+</html>

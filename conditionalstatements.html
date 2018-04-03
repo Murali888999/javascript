@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+  <script>
+      var age = 18;
+      if((age >5) && (age <= 6))
+      {
+          document.write("go to Anganvadi <br/>");
+      }
+      else if(age >= 18)
+      {
+          document.write("go to college <br/>");
+      }
+      else 
+      {
+          document.write("go to grade <br/>");
+      }
+      switch(age)
+      {
+          case 5:
+              document.write("go to anganvadi");
+              break;
+          case 7:
+              document.write("go to 1st class");
+              break;
+
+          default:
+              document.write("subract 5 from your and based on age go to grade <br/>");
+      }
+      var vote = (age >= 18) ? true : false;
+      if(vote)
+      {
+          document.write("your eligible for voting");
+      }
+      else
+      {
+          document.write("your not eligible for voting");
+      }
+
+  </script>
+</body>
+</html>

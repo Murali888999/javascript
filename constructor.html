@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h2>constructors in java script</h2>
+    <p id="con"></p>
+    <script>
+        function employee(name, age, address, maritalstatus) {
+            this.name = name;
+            this.age = age;
+            this.addres = address;
+            this.maritalstatus = maritalstatus;
+            this.mothertongue = "Telugu";
+            this.nationality = function () {
+                return "INDIAN";
+            }
+        }
+        employee.prototype.salary = 35000;
+        empdetails = new employee("Mohan", 24, "Hyderabad", "unmarried");
+
+        document.getElementById("con").innerHTML = "emp marital status: " + empdetails.name + " is :" + empdetails.maritalstatus + " and mother tongue is  "
+                          + empdetails.mothertongue +" nationality is "+empdetails.nationality() +" salary is  " + empdetails.salary;
+    </script>
+</body>
+</html>
